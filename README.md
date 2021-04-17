@@ -5,7 +5,7 @@
 ## Installation
 
 
-```
+```fish
 curl -sSL https://git.io/fisher_path.fish --create-dirs -o $__fish_config_dir/conf.d/fisher_path.fish
 # or
 curl -sSL https://git.io/fisher_path.fish >> $__fish_config_dir/config.fish
@@ -13,7 +13,7 @@ curl -sSL https://git.io/fisher_path.fish >> $__fish_config_dir/config.fish
 
 Alternatively, use [Fisher](https://github.com/jorgebucaran/fisher):
 
-```
+```fish
 fisher install kidonng/fisher_path.fish
 # Install `kidonng/fisher_path.fish@config` to save the following step
 echo 'builtin source $fisher_path/conf.d/fisher_path.fish' >> $__fish_config_dir/config.fish
