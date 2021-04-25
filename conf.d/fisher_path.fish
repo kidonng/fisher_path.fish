@@ -7,7 +7,7 @@ end
 
 set fish_function_path $fish_function_path[1] $fisher_path/functions $fish_function_path[2..-1]
 
-status is-interactive || exit
+status -i || exit
 
 set fish_complete_path $fish_complete_path[1] $fisher_path/completions $fish_complete_path[2..-1]
 
