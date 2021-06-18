@@ -21,4 +21,3 @@ echo 'source $fisher_path/conf.d/fisher_path.fish' >> $__fish_config_dir/config.
 ## Note
 
 - To stop loading plugins in new sessions, create a variable `$_fisher_path_initialized` via `set -U _fisher_path_initialized`. To revert, just erase it via `set -e _fisher_path_initialized`.
-- `conf.d` scripts are only loaded in interactive mode, to reduce shell startup time. Please report an issue if any plugin obscurely	depends on them.
