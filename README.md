@@ -8,12 +8,12 @@ This plugin properly implements [conf.d loading](https://github.com/fish-shell/f
 
 ```fish
 # Save the script for auto loading
-curl -sSL https://git.io/fisher_path.fish --create-dirs -o $__fish_config_dir/conf.d/fisher_path.fish
+curl -fsSL https://git.io/fisher_path.fish --create-dirs -o $__fish_config_dir/conf.d/fisher_path.fish
 
 # Or append the script to your fish config
-curl -sSL https://git.io/fisher_path.fish >> $__fish_config_dir/config.fish
+curl -fsSL https://git.io/fisher_path.fish >> $__fish_config_dir/config.fish
 ```
 
 ## Note
 
-- To stop loading plugins in new sessions, create a variable `$_fisher_path_initialized` via `set -U _fisher_path_initialized`. To revert, just erase it via `set -e _fisher_path_initialized`.
+- To stop loading plugins in new sessions, create a variable `$_fisher_path_initialized` via `set --universal _fisher_path_initialized`. To revert, just erase it via `set --erase _fisher_path_initialized`.
